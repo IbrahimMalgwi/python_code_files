@@ -1,0 +1,8 @@
+genexp = (num for num in range(1, 6))
+print(type(genexp), genexp)
+print(next(genexp))
+print(next(genexp))
+print(next(genexp))
+print(next(genexp))
+print(next(genexp))
+print(list(genexp))
