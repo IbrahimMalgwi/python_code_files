@@ -8,8 +8,14 @@ class Human:
     def full_name(self):
         return f"{self.last_name} {self.first_name}"
 
+    def __len__(self):
+        return self.age
+
     def __str__(self):
         return f"name={self.last_name} {self.first_name}, age={self.age}, sex={self.sex}"
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.first_name}, {self.last_name}, {self.age}, {self.sex})"
 
 
 class Manager(Human):
@@ -35,11 +41,14 @@ print(employee1)
 
 manager1: Manager = Manager("Joanna", "Malgwi", 1, "Female", 1200)
 print(manager1.full_name())
-
+#
 human_list = [employee1, manager1, Human("Sapien", "Homo", 0, "Unknown")]
 for human in human_list:
     print(human.full_name())
 
 workers_list = [employee1, manager1]
-for human in human_list:
+for human in workers_list:
     print(human.pay_salary(50_000))
+
+print(f"{employee1}!r")
+print(len(manager1))
