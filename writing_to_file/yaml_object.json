@@ -1,0 +1,16 @@
+- Price: 23.5
+  Quantity: 3
+  is_expired: false
+  name: Soap
+- Price: 20.0
+  Quantity: 6
+  is_expired: false
+  name: Tissue
+- Price: 123.99
+  Quantity: 2
+  is_expired: false
+  name: Durex
+- Price: 239.99
+  Quantity: 1
+  is_expired: true
+  name: Neck choke
